@@ -1,0 +1,49 @@
+{
+  "projects": [
+    {
+      "id": "1",
+      "Title": "QuestSearch",
+      "Description": "A powerful search engine that fetches relevant results across multiple platforms, integrating AI for enhanced recommendations.",
+      "Img": "/images/peoj.jpg",
+      "Link": "https://questsearchspeakx.vercel.app/",
+      "Github":"https://github.com/krishna-nishant/SpeakX-frontend",
+      "TechStack": ["React", "Firebase", "TailwindCSS"]
+    },
+    {
+      "id": "2",
+      "Title": "SociaLink",
+      "Description": "A social media aggregator that consolidates updates from multiple networks into a single, streamlined feed.",
+      "Img": "/images/peoj.jpg",
+      "Link": "https://socialinkk.onrender.com/",
+      "Github":"https://github.com/krishna-nishant/socialinkFrontend",
+      "TechStack": ["Node.js", "MongoDB", "Express"]
+    },
+    {
+      "id": "3",
+      "Title": "Smart Voice",
+      "Description": "A voice-powered assistant application that enables users to perform tasks using speech recognition and AI automation.",
+      "Img": "/images/peoj.jpg",
+      "Link": "https://example.com/smartvoice",
+      "Github":"https://github.com/krishna-nishant",
+      "TechStack": ["React", "Firebase", "TailwindCSS"]
+    },
+    {
+      "id": "4",
+      "Title": "Contest Tracker",
+      "Description": "A contest tracking web app that fetches upcoming competitive programming contests from multiple sources, with filters and reminders.",
+      "Img": "/images/peoj.jpg",
+      "Link": "https://contest-tracker-krishna.vercel.app/",
+      "Github":"https://github.com/krishna-nishant/contest-tracker",
+      "TechStack": ["Node.js", "MongoDB", "Express", "React"]
+    },
+    {
+      "id": "5",
+      "Title": "Food Recipe App",
+      "Description": "A recipe management application where users can explore, save, and share their favorite dishes with a sleek and interactive UI.",
+      "Img": "/images/peoj.jpg",
+      "Link": "https://food-recipe-lovat-five.vercel.app/",
+      "Github":"https://github.com/krishna-nishant/FoodRecipeApp",
+      "TechStack": ["React", "Firebase", "TailwindCSS"]
+    }
+  ]
+}
