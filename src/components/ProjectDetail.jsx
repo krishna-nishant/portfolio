@@ -14,7 +14,6 @@ import {
   Cpu,
   Code,
 } from "lucide-react";
-import Swal from "sweetalert2";
 import projectData from "../data.json"; // Import JSON data
 
 const TECH_ICONS = {
@@ -63,7 +62,6 @@ const ProjectDetails = () => {
   const { id } = useParams();
   const navigate = useNavigate();
   const [project, setProject] = useState(null);
-  const [isImageLoaded, setIsImageLoaded] = useState(false);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -88,6 +86,7 @@ const ProjectDetails = () => {
 
       <div className="relative">
         <div className="max-w-7xl mx-auto px-4 md:px-6 py-8 md:py-16">
+          {/* Back Button & Breadcrumb */}
           <div className="flex items-center space-x-2 md:space-x-4 mb-12 animate-fadeIn">
             <button
               onClick={() => navigate(-1)}
@@ -103,11 +102,15 @@ const ProjectDetails = () => {
             </div>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-16">
-            <div className="space-y-10 animate-slideInLeft">
-              <h1 className="text-6xl font-bold bg-gradient-to-r from-blue-200 via-purple-200 to-pink-200 bg-clip-text text-transparent">
-                {project.Title}
-              </h1>
+          {/* Title Centered */}
+          <h1 className="text-6xl text-center font-bold bg-gradient-to-r from-blue-200 via-purple-200 to-pink-200 bg-clip-text text-transparent">
+            {project.Title}
+          </h1>
+
+          {/* Description & Features Side by Side */}
+          <div className="grid lg:grid-cols-2 gap-12 mt-10">
+            {/* Left: Description & Tech Stack */}
+            <div className="space-y-8">
               <p className="text-lg text-gray-300 leading-relaxed">{project.Description}</p>
 
               {/* Tech Stack */}
@@ -122,8 +125,24 @@ const ProjectDetails = () => {
                   ))}
                 </div>
               </div>
+            </div>
 
-              {/* Action Buttons */}
+            {/* Right: Features & Buttons */}
+            <div className="space-y-8">
+              {/* Features */}
+              <div className="space-y-4">
+                <h3 className="text-xl font-semibold text-white/90 flex items-center gap-3">
+                  <Star className="w-5 h-5 text-yellow-400" />
+                  Features
+                </h3>
+                <ul className="space-y-2">
+                  {project.Features.map((feature, index) => (
+                    <FeatureItem key={index} feature={feature} />
+                  ))}
+                </ul>
+              </div>
+
+              {/* Buttons */}
               <div className="flex flex-wrap gap-4">
                 <a
                   href={project.Link}
@@ -142,18 +161,19 @@ const ProjectDetails = () => {
                   className="inline-flex items-center px-8 py-3 bg-purple-600/20 text-purple-300 rounded-xl hover:bg-purple-600/30 transition-all duration-300 border border-purple-500/20 hover:border-purple-500/40"
                 >
                   <Github className="w-5 h-5 mr-2" />
-                  Github
+                  GitHub
                 </a>
               </div>
             </div>
+          </div>
 
-            {/* Project Image */}
-            <div className="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl animate-slideInRight">
+          {/* Project Image (Stretched 80%) */}
+          <div className="flex justify-center mt-16">
+            <div className="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl w-[80%] h-[450px] flex items-center">
               <img
                 src={project.Img}
                 alt={project.Title}
-                className="w-full object-cover transition-transform duration-700 group-hover:scale-105"
-                onLoad={() => setIsImageLoaded(true)}
+                className="w-full h-full object-cover"
               />
             </div>
           </div>

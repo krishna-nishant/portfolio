@@ -1,4 +1,11 @@
-import { Linkedin, Github, Instagram, Code, ExternalLink } from "lucide-react";
+import {
+  Linkedin,
+  Github,
+  Instagram,
+  Code,
+  Twitter,
+  ExternalLink,
+} from "lucide-react";
 
 const socialLinks = [
   {
@@ -11,6 +18,15 @@ const socialLinks = [
     gradient: "from-[#0A66C2] to-[#0077B5]",
   },
   {
+    name: "GitHub",
+    displayName: "GitHub",
+    subText: "@krishna-nishant",
+    icon: Github,
+    url: "https://github.com/krishna-nishant",
+    color: "#333",
+    gradient: "from-[#333] to-[#24292e]",
+  },
+  {
     name: "Instagram",
     displayName: "Instagram",
     subText: "@krishna_0795_",
@@ -20,13 +36,13 @@ const socialLinks = [
     gradient: "from-[#833AB4] via-[#E4405F] to-[#FCAF45]",
   },
   {
-    name: "GitHub",
-    displayName: "GitHub",
-    subText: "@krishna-nishant",
-    icon: Github,
-    url: "https://github.com/krishna-nishant",
-    color: "#333",
-    gradient: "from-[#333] to-[#24292e]",
+    name: "Twitter",
+    displayName: "X / Twitter",
+    subText: "@krishna_0795",
+    icon: Twitter,
+    url: "https://x.com/krishna_0795",
+    color: "#1DA1F2",
+    gradient: "from-[#1DA1F2] to-[#0D8ECF]",
   },
   {
     name: "LeetCode",
