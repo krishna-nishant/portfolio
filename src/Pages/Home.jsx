@@ -232,7 +232,7 @@ export default function Home() {
 
             {/* Right Column - Lottie Animation */}
             <div
-              className="w-full lg:w-1/2 h-[400px] sm:h-[500px] lg:h-[600px] relative flex items-center justify-center"
+              className="w-full lg:w-2/5 h-[300px] sm:h-[400px] lg:h-[500px] relative flex items-center justify-center"
               onMouseEnter={() => setIsHovering(true)}
               onMouseLeave={() => setIsHovering(false)}
               data-aos="fade-left"
@@ -258,7 +258,7 @@ export default function Home() {
                     autoplay={true}
                     style={{ width: "100%", height: "100%" }}
                     className={`w-full h-full transition-all duration-500 ${
-                      isHovering ? "scale-[140%] rotate-2" : "scale-[135%]"
+                      isHovering ? "scale-[120%] rotate-2" : "scale-[115%]"
                     }`}
                   />
                 </div>
@@ -270,7 +270,7 @@ export default function Home() {
                   }`}
                 >
                   <div
-                    className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-gradient-to-br from-indigo-500/10 to-purple-500/10 blur-3xl animate-pulse transition-all duration-700 ${
+                    className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] bg-gradient-to-br from-indigo-500/10 to-purple-500/10 blur-3xl animate-pulse transition-all duration-700 ${
                       isHovering ? "scale-110" : "scale-100"
                     }`}
                   ></div>
