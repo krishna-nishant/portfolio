@@ -12,7 +12,7 @@ import ContactPage from "./Pages/Contact";
 import ProjectDetails from "./components/ProjectDetail";
 import WelcomeScreen from "./Pages/WelcomeScreen";
 import ThankYouPage from "./Pages/ThankYou";
-import NotFound from "./pages/NotFound";
+import NotFound from "./Pages/NotFound";
 import { AnimatePresence } from "framer-motion";
 
 // Simplified LandingPage component
