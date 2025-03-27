@@ -12,6 +12,7 @@ import ContactPage from "./Pages/Contact";
 import ProjectDetails from "./components/ProjectDetail";
 import WelcomeScreen from "./Pages/WelcomeScreen";
 import ThankYouPage from "./Pages/ThankYou";
+import NotFound from "./pages/NotFound";
 import { AnimatePresence } from "framer-motion";
 
 // Simplified LandingPage component
@@ -90,6 +91,7 @@ export default function App() {
         />
         <Route path="/project/:id" element={<ProjectPageLayout />} />
         <Route path="/thank-you" element={<ThankYouPage />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   );

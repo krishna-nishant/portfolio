@@ -73,34 +73,34 @@ function a11yProps(index) {
 
 // Tech Stack
 const techStacks = [
-  { icon: "reactjs.svg", language: "ReactJS" },
-  { icon: "nodejs.svg", language: "Node JS" },
-  { icon: "MongoDB.svg", language: "Mongo DB" },
-  { icon: "Express.svg", language: "Express JS" },
-  { icon: "tailwind.svg", language: "Tailwind CSS" },
-  { icon: "javascript.svg", language: "JavaScript" },
-  { icon: "cpp.svg", language: "C++" },
-  { icon: "typescript.svg", language: "TypeScript" },
-  { icon: "sql.svg", language: "SQL" },
-  { icon: "socket.svg", language: "Socket.IO" },
-  { icon: "css.svg", language: "CSS" },
-  { icon: "vite.svg", language: "Vite" },
-  { icon: "html.svg", language: "HTML" },
+  { icon: "/logo/reactjs.svg", language: "ReactJS" },
+  { icon: "/logo/nodejs.svg", language: "Node JS" },
+  { icon: "/logo/MongoDB.svg", language: "Mongo DB" },
+  { icon: "/logo/Express.svg", language: "Express JS" },
+  { icon: "/logo/tailwind.svg", language: "Tailwind CSS" },
+  { icon: "/logo/javascript.svg", language: "JavaScript" },
+  { icon: "/logo/cpp.svg", language: "C++" },
+  { icon: "/logo/typescript.svg", language: "TypeScript" },
+  { icon: "/logo/sql.svg", language: "SQL" },
+  { icon: "/logo/socket.svg", language: "Socket.IO" },
+  { icon: "/logo/css.svg", language: "CSS" },
+  { icon: "/logo/vite.svg", language: "Vite" },
+  { icon: "/logo/html.svg", language: "HTML" },
 ];
 
 // Tools & Utilities
 const tools = [
-  { icon: "git.svg", name: "Git" },
-  { icon: "github.svg", name: "GitHub" },
-  { icon: "postman.svg", name: "Postman" },
-  { icon: "vscode.svg", name: "Visual Studio Code" },
-  { icon: "vercel.svg", name: "Vercel" },
-  { icon: "render.jpg", name: "Render" },
-  { icon: "NPM.svg", name: "NPM" },
-  { icon: "chatgpt.svg", name: "ChatGPT" },
-  { icon: "shadcn.svg", name: "Shadcn" },
-  { icon: "MUI.svg", name: "Material UI" },
-  { icon: "canva.svg", name: "Canva" },
+  { icon: "/logo/git.svg", name: "Git" },
+  { icon: "/logo/github.svg", name: "GitHub" },
+  { icon: "/logo/postman.svg", name: "Postman" },
+  { icon: "/logo/vscode.svg", name: "Visual Studio Code" },
+  { icon: "/logo/vercel.svg", name: "Vercel" },
+  { icon: "/logo/render.jpg", name: "Render" },
+  { icon: "/logo/NPM.svg", name: "NPM" },
+  { icon: "/logo/chatgpt.svg", name: "ChatGPT" },
+  { icon: "/logo/shadcn.svg", name: "Shadcn" },
+  { icon: "/logo/MUI.svg", name: "Material UI" },
+  { icon: "/logo/canva.svg", name: "Canva" },
 ];
 
 export default function FullWidthTabs() {

@@ -29,7 +29,7 @@ const ProfileImage = memo(() => (
     <div className="relative group" data-aos="fade-up" data-aos-duration="1000">
       <div className="relative w-72 h-72 sm:w-80 sm:h-80 rounded-full overflow-hidden shadow-lg">
         <img
-          src="/Photo.png"
+          src="/logo/Photo.png"
           alt="Profile"
           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
           loading="lazy"

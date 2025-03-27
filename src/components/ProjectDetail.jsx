@@ -82,7 +82,7 @@ const ProjectDetails = () => {
 
   return (
     <div className="min-h-screen bg-[#030014] px-[2%] sm:px-0 relative overflow-hidden">
-      <div className="fixed inset-0 bg-[url('/grid.svg')] opacity-[0.02]" />
+      <div className="fixed inset-0 bg-[url('/logo/grid.svg')] opacity-[0.02]" />
 
       <div className="relative">
         <div className="max-w-7xl mx-auto px-4 md:px-6 py-8 md:py-16">
