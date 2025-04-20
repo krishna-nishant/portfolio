@@ -41,18 +41,42 @@ const ContactPage = () => {
     });
 
     try {
+      // Get form reference
       const form = e.target;
-      await form.submit();
-
-      Swal.fire({
-        title: "Success!",
-        text: "Your message has been sent successfully!",
-        icon: "success",
-        confirmButtonColor: "#6366f1",
-        timer: 2000,
-        timerProgressBar: true,
-      });
-
+      
+      // For local development, handle submission manually
+      if (window.location.hostname === "localhost") {
+        // Show success message
+        await new Promise(resolve => setTimeout(resolve, 1000)); // Simulate network delay
+        
+        Swal.fire({
+          title: "Success!",
+          text: "Your message has been sent successfully!",
+          icon: "success",
+          confirmButtonColor: "#6366f1",
+          timer: 1500,
+          timerProgressBar: true,
+        });
+        
+        // Reset form
+        setFormData({
+          name: "",
+          email: "",
+          message: "",
+        });
+        
+        // Redirect locally
+        setTimeout(() => {
+          window.location.href = "/thank-you";
+        }, 1500);
+        
+        return;
+      }
+      
+      // In production, submit the form normally with FormSubmit's _next parameter
+      form.submit();
+      
+      // The code below may not run in production as the form submission will redirect
       setFormData({
         name: "",
         email: "",
@@ -137,7 +161,8 @@ const ContactPage = () => {
             >
               <input type="hidden" name="_template" value="table" />
               <input type="hidden" name="_captcha" value="false" />
-              <input type="hidden" name="_redirect" value="/thank-you" />
+              <input type="hidden" name="_next" value="https://krishna-nishant.vercel.app/thank-you" />
+              <input type="hidden" name="_subject" value="New message from portfolio contact form" />
 
               <div className="relative group">
                 <User className="absolute left-4 top-4 w-5 h-5 text-gray-400" />

@@ -1,5 +1,13 @@
 {
   "version": 2,
   "public": true,
-  "builds": [{ "src": "package.json", "use": "@vercel/static-build" }]
+  "builds": [{ "src": "package.json", "use": "@vercel/static-build" }],
+  "routes": [
+    { "src": "/sitemap.xml", "dest": "/sitemap.xml" },
+    { "src": "/robots.txt", "dest": "/robots.txt" },
+    { "src": "/thank-you", "dest": "/index.html" },
+    { "src": "/project/[0-9]+", "dest": "/index.html" },
+    { "src": "/$", "dest": "/index.html" },
+    { "src": "/(.*)", "status": 404, "dest": "/index.html" }
+  ]
 } 

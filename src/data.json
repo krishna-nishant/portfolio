@@ -71,7 +71,7 @@
         "Role-based access control for different user types"
       ],
       "Img": "/images/lead.png",
-      "Link": "http://localhost:5174/*",
+      "Link": "https://krishna-nishant.vercel.app/project-lead-demo",
       "Github": "https://github.com/krishna-nishant/lead-management",
       "TechStack": [
         "React.js",
@@ -148,7 +148,7 @@
         "Integration with various APIs for enhanced processing"
       ],
       "Img": "/images/voice.png",
-      "Link": "https://example.com/smartvoice",
+      "Link": "https://krishna-nishant.vercel.app/voice-assistant-demo",
       "Github": "https://github.com/krishna-nishant/smart-voice",
       "TechStack": [
         "React Native",
