@@ -11,11 +11,10 @@ import Portfolio from "./Pages/Portfolio";
 import ContactPage from "./Pages/Contact";
 import ProjectDetails from "./components/ProjectDetail";
 import WelcomeScreen from "./Pages/WelcomeScreen";
-import ThankYouPage from "./Pages/ThankYou";
 import NotFound from "./Pages/NotFound";
+import ThankYouPage from "./Pages/ThankYou";
 import { AnimatePresence } from "framer-motion";
 
-// Simplified LandingPage component
 const LandingPage = ({ showWelcome, setShowWelcome }) => {
   return (
     <>
@@ -53,7 +52,6 @@ const LandingPage = ({ showWelcome, setShowWelcome }) => {
   );
 };
 
-// Simplified ProjectPageLayout component
 const ProjectPageLayout = () => (
   <>
     <ProjectDetails />
